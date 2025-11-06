@@ -492,6 +492,11 @@ nav {
   
 */
 
+#projects {
+  scroll-margin-top: 80px;
+}
+
+
 .section__title {
   text-align: center;
   font-size: 48px;
