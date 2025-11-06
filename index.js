@@ -1,6 +1,6 @@
 let isModalOpen = false;
 let contrastToggle = false;
-const scaleFactor = 1/20
+const scaleFactor = 1 / 20;
 
 document.addEventListener("mousemove", moveBackground);
 
@@ -11,28 +11,27 @@ function moveBackground(event) {
 
   for (let i = 0; i < shapes.length; ++i) {
     const isOdd = i % 2 !== 0;
-    const boolInt = isOdd ? - 1 : 1;
-    shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`; 
-}
+    const boolInt = isOdd ? -1 : 1;
+    shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`;
+  }
 }
 
 function toggleContrast() {
-  contrastToggle = !contrastToggle
+  contrastToggle = !contrastToggle;
   if (contrastToggle) {
-    document.body.classList += " dark-theme"
-  }
-  else {
-    document.body.classList.remove("dark-theme")
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
   }
 }
-
-
 
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector(".modal__overlay--loading");
   const success = document.querySelector(".modal__overlay--success");
-  loading.classList += " modal__overlay--visible";
+
+  loading.classList.add("modal__overlay--visible");
+
   emailjs
     .sendForm(
       "service_53clneq",
@@ -42,7 +41,7 @@ function contact(event) {
     )
     .then(() => {
       loading.classList.remove("modal__overlay--visible");
-      success.classList += " modal__overlay--visible";
+      success.classList.add("modal__overlay--visible");
     })
     .catch(() => {
       loading.classList.remove("modal__overlay--visible");
@@ -52,12 +51,12 @@ function contact(event) {
     });
 }
 
-
 function toggleModal() {
   if (isModalOpen) {
     isModalOpen = false;
-    return document.body.classList.remove("modal--open");
+    document.body.classList.remove("modal--open");
+  } else {
+    isModalOpen = true;
+    document.body.classList.add("modal--open");
   }
-  isModalOpen = true;
-  document.body.classList += " modal--open";
 }
