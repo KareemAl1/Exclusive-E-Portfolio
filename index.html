@@ -7,13 +7,10 @@
   <title>Kareem Alwan</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/c2af4352a7.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
-      emailjs.init({
-        publicKey: "",
-      });
+      emailjs.init({ publicKey: "" });
     })();
   </script>
 </head>
@@ -22,53 +19,39 @@
   <section id="landing-page">
     <nav>
       <figure>
-        <img id="personal-logo" src="./davids stuff/Tutorial Exclusive Eportfolio/assets/logo.svg" alt="">
+        <img id="personal-logo" src="./assets/ka.png" alt="KA">
       </figure>
       <ul class="nav__link--list">
         <li class="nav__link" onclick="toggleModal()">
-          <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">About</a>
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
         </li>
         <li class="nav__link">
-          <a href="#projects" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Projects</a>
+          <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
         </li>
         <li class="nav__link" onclick="toggleModal()">
-          <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Contact</a>
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
         </li>
         <li class="nav__link click" onclick="toggleContrast()">
-          <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          "><i class="fas fa-adjust"></i></a>
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">
+            <i class="fas fa-adjust"></i>
+          </a>
         </li>
       </ul>
     </nav>
+
     <header class="header">
       <div class="header__content">
         <h1 class="title">Hey</h1>
         <h1 class="title orange">I'm Kareem</h1>
-        <p class="header__para">I'm a <b class="orange">Frontend Software Engineer</b> with a strong passion for
-          building web applications with great user experiences.
-          <br>Heres a bit more <b class="orange click" onclick="toggleModal()">about me</b>
+        <p class="header__para">
+          I'm a <b class="orange">Frontend Developer</b> with a strong passion for building web applications with great user experiences.
+          <br>Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>
         </p>
         <div class="social__list">
-          <a href="#" class="social__link click">
+          <a href="https://linkedin.com/in/kareemalwan" target="_blank" class="social__link click">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
-
-          <a href="#" class="social__link click">
+          <a href="https://github.com/KareemAl1" target="_blank" class="social__link click">
             <i class="fa-brands fa-github"></i>
           </a>
           <a href="#" class="social__link click">
@@ -77,71 +60,63 @@
         </div>
       </div>
     </header>
+
     <button type="button" class="mail__btn click" onclick="toggleModal()">
       <i class="fa-solid fa-envelope"></i>
     </button>
+
     <a href="#projects" class="scroll">
       <div class="scroll__icon click"></div>
     </a>
+
     <div class="modal">
       <div class="modal__half modal__about">
-        <h3 class="modal__title modal__title--about">Heres a bit about me</h3>
-        <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+        <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">Frontend Developer</h4>
         <p class="modal__para">
-          I'm a 24 year-old <b class="orange">frontend software engineer</b> with a strong passion for developing
-          websites with great user <b class="orange">experiences</b>
-          I currently solve extremely difficult engineering
-          problems every day and learn from a team consisting of some of the most <b class="orange">talented</b> and <b
-            class="orange">experienced</b> software engineers every day
+          I'm a <b class="orange">frontend developer</b> who builds polished, production-ready web apps using
+          <b class="orange">Next.js, React, and TypeScript</b>. I completed the FES Institute Frontend Development
+          Bootcamp and have shipped 3 deployed projects including an AI skincare platform, a full-stack book summary
+          app, and an NFT marketplace. I'm currently seeking <b class="orange">junior-to-mid frontend roles</b>.
         </p>
         <div class="modal__languages">
           <figure class="modal__language">
-            <img class="modal__language--img"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-              alt="">
+            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
             <span class="language__name">HTML</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-              alt="">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
             <span class="language__name">CSS</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-              alt="">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
             <span class="language__name">JavaScript</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
-              alt="">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
             <span class="language__name">React</span>
           </figure>
         </div>
       </div>
+
       <div class="modal__half modal__contact">
         <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-        <h3 class="modal__title modal__title--contact">
-          Let's have a chat!
-        </h3>
-        <h3 class="modal__sub-title modal__sub-title--contact">
-          I'm currently open to new opportunities.
-        </h3>
+        <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h3>
         <form id="contact__form" onsubmit="contact(event)">
           <div class="form__item">
             <label class="form__item--label">Name</label>
-            <input class="input" name="user_name" type="text"></input>
+            <input class="input" name="user_name" type="text">
           </div>
           <div class="form__item">
             <label class="form__item--label">Email</label>
-            <input class="input" name="user_email" type="email"></input>
+            <input class="input" name="user_email" type="email">
           </div>
           <div class="form__item">
             <label class="form__item--label">Message</label>
-            <textarea class="input" name="message" type="text"></textarea>
+            <textarea class="input" name="message"></textarea>
           </div>
-          <button id="contact__submit" class="form__submit">
-            Send it my way
-          </button>
+          <button id="contact__submit" class="form__submit">Send it my way</button>
         </form>
         <div class="modal__overlay modal__overlay--loading">
           <i class="fas fa-spinner"></i>
@@ -151,167 +126,112 @@
         </div>
       </div>
     </div>
-    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/semi circle.svg" class="shape shape--0" alt=""
-      aria-hidden="true">
-    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/circle.svg" class="shape shape--1" alt=""
-      aria-hidden="true">
-    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/squiggly.svg" class="shape shape--2" alt=""
-      aria-hidden="true">
-    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/circle.svg" class="shape shape--3" alt=""
-      aria-hidden="true">
-    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/triangle.svg" class="shape shape--4" alt=""
-      aria-hidden="true">
-    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/circle.svg" class="shape shape--5" alt=""
-      aria-hidden="true">
-    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/squiggly.svg" class="shape shape--6" alt=""
-      aria-hidden="true">
-    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/circle.svg" class="shape shape--7" alt=""
-      aria-hidden="true">
-    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/semi circle.svg" class="shape shape--8" alt=""
-      aria-hidden="true">
 
+    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/semi circle.svg" class="shape shape--0" alt="" aria-hidden="true">
+    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/circle.svg" class="shape shape--1" alt="" aria-hidden="true">
+    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/squiggly.svg" class="shape shape--2" alt="" aria-hidden="true">
+    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/circle.svg" class="shape shape--3" alt="" aria-hidden="true">
+    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/triangle.svg" class="shape shape--4" alt="" aria-hidden="true">
+    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/circle.svg" class="shape shape--5" alt="" aria-hidden="true">
+    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/squiggly.svg" class="shape shape--6" alt="" aria-hidden="true">
+    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/circle.svg" class="shape shape--7" alt="" aria-hidden="true">
+    <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/semi circle.svg" class="shape shape--8" alt="" aria-hidden="true">
   </section>
+
   <section id="projects">
     <div class="container">
       <div class="row">
-        <h1 class="section__title">
-          Here are some of my <span class="orange">projects</span>
-        </h1>
+        <h1 class="section__title">Here are some of my <span class="orange">projects</span></h1>
         <ul class="project__list">
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/blinker mockup.png" class="project__img"
-                alt="">
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Car Sales Project
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript
-                </h4>
-                <p class="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate ad necessitatibus.
-                  Incidunt ducimus sed provident nobis voluptatem voluptate consectetur exercitationem vero iusto. Est
-                  ducimus officia sunt laborum suscipit modi.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/KareemAl1/Exclusive-E-Portfolio" target="_blank" rel="noopener noreferrer"
-                    class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
 
-                  <a href="#" target="_blank" rel="noopener noreferrer" class="project__description--link">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/skin.png" class="project__img" alt="Skinstric AI">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">Skinstric AI</h3>
+                <h4 class="project__description--sub-title">Next.js · TypeScript · Tailwind CSS v4 · React Icons</h4>
+                <p class="project__description--para">
+                  An AI-powered skin analysis platform featuring a multi-step demographic detection flow, smooth animated UI transitions, and a pixel-perfect responsive design built from Figma specs and deployed on Vercel.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/KareemAl1/skinstric-ai" target="_blank" rel="noopener noreferrer" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://skinstric-ai-ten.vercel.app" target="_blank" rel="noopener noreferrer" class="project__description--link">
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
+              </div>
+            </div>
+          </li>
 
-              </div>
-            </div>
-          </li>
           <li class="project">
             <div class="project__wrapper">
-              <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/blinker mockup.png" class="project__img"
-                alt="">
+              <img src="./assets/summ.png" class="project__img" alt="Summarist">
               <div class="project__wrapper--bg"></div>
               <div class="project__description">
-                <h3 class="project__description--title">
-                  Car Sales Project
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript
-                </h4>
+                <h3 class="project__description--title">Summarist</h3>
+                <h4 class="project__description--sub-title">Next.js · TypeScript · Firebase · Redux · Audio Integration</h4>
                 <p class="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate ad necessitatibus.
-                  Incidunt ducimus sed provident nobis voluptatem voluptate consectetur exercitationem vero iusto. Est
-                  ducimus officia sunt laborum suscipit modi.
+                  A full-stack book summary platform with Firebase Authentication (email, Google, guest), Redux state management, a custom audio player with speed controls, debounced search, and skeleton loading states across 10+ pages.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://github.com/KareemAl1/Exclusive-E-Portfolio" target="_blank" rel="noopener noreferrer"
-                    class="project__description--link">
+                  <a href="https://github.com/KareemAl1/summarist-app" target="_blank" rel="noopener noreferrer" class="project__description--link">
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" class="project__description--link">
+                  <a href="https://summarist-app-eta.vercel.app" target="_blank" rel="noopener noreferrer" class="project__description--link">
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
               </div>
             </div>
           </li>
+
           <li class="project">
             <div class="project__wrapper">
-              <img src="./davids stuff/Tutorial Exclusive Eportfolio/assets/blinker mockup.png" class="project__img"
-                alt="">
+              <img src="./assets/nft.png" class="project__img" alt="NFT Marketplace">
               <div class="project__wrapper--bg"></div>
               <div class="project__description">
-                <h3 class="project__description--title">
-                  Car Sales Project
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript
-                </h4>
+                <h3 class="project__description--title">NFT Marketplace</h3>
+                <h4 class="project__description--sub-title">React · JavaScript · REST APIs · AOS · React Router</h4>
                 <p class="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate ad necessitatibus.
-                  Incidunt ducimus sed provident nobis voluptatem voluptate consectetur exercitationem vero iusto. Est
-                  ducimus officia sunt laborum suscipit modi.
+                  A dynamic NFT marketplace converting a static codebase into a fully API-driven application with Hot Collections carousel, countdown timers, TopSellers lists, scroll animations, and follow/unfollow functionality.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://github.com/KareemAl1/Exclusive-E-Portfolio" target="_blank" rel="noopener noreferrer"
-                    class="project__description--link">
+                  <a href="https://github.com/KareemAl1/kareem-internship" target="_blank" rel="noopener noreferrer" class="project__description--link">
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" class="project__description--link">
+                  <a href="https://kareem-internship.vercel.app" target="_blank" rel="noopener noreferrer" class="project__description--link">
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
               </div>
             </div>
           </li>
+
         </ul>
       </div>
     </div>
   </section>
+
   <footer>
     <div class="container">
       <div class="row footer__row">
         <figure>
-          <img class="footer__logo--img" src="./davids stuff/Tutorial Exclusive Eportfolio/assets/logo.svg" alt="">
+          <img class="footer__logo--img" src="./assets/ka.png" alt="KA">
         </figure>
         <div class="footer__social--list">
-          <a href="#" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-        ">
-            Github
-          </a>
-          <a href="#" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-        ">
-            LinkedIn
-          </a>
-          <a href="#" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-        ">
-            Contact
-          </a>
-          <a href="#" onclick="toggleModal()" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-        ">
-            Resume
-          </a>
+          <a href="https://github.com/KareemAl1" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">Github</a>
+          <a href="https://linkedin.com/in/kareemalwan" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">LinkedIn</a>
+          <a href="#" onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white">Contact</a>
+          <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">Resume</a>
         </div>
         <div class="footer__copyright">Copyright &copy; 2025 Kareem Alwan</div>
       </div>
     </div>
   </footer>
+
   <script src="index.js"></script>
 </body>
-
 </html>
